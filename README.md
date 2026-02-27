@@ -1,5 +1,7 @@
 # 🩸 Online Blood Donation Portal
 
+**🎓 Semester Project | Web Technologies | Government College Women University Sialkot**
+
 A complete web-based blood donation management system that connects blood donors with hospitals in need. This platform streamlines the process of blood donation, request management, and inventory tracking.
 
 <img width="1896" height="913" alt="Screenshot 2026-02-27 223453" src="https://github.com/user-attachments/assets/9c602dd9-b0b7-4d53-875c-2a4a40233bb8" />
@@ -14,6 +16,7 @@ A complete web-based blood donation management system that connects blood donors
 - [Usage Guide](#-usage-guide)
 - [Login Credentials](#-login-credentials)
 - [Future Enhancements](#-future-enhancements)
+- [Acknowledgements](#-acknowledgements)
 
 ## ✨ Features
 
@@ -299,3 +302,15 @@ Password hashing for security
 CAPTCHA for registration forms
 
 Multi-language support
+
+## 🙏 Acknowledgements
+
+- **Course**: [Web Technologies ]
+- **University**: [Government College Women University Sialkot]
+- **Department**: [Information Technology ]
+- **Semester**: [Fall 2025]
+
+---
+**📚 Semester Project | [Government College Women University Sialkot] | [2026]**
+
+**Made with ❤️ by [Isha Ijaz]** 🩸
