@@ -1,5 +1,3 @@
-# blood-donation-portal
-A  complete web-based blood donation management system connecting donors with hospitals. Built with PHP, MySQL, HTML, CSS, and JavaScript.
 # 🩸 Online Blood Donation Portal
 
 A complete web-based blood donation management system that connects blood donors with hospitals in need. This platform streamlines the process of blood donation, request management, and inventory tracking.
@@ -15,7 +13,6 @@ A complete web-based blood donation management system that connects blood donors
 - [Installation Guide](#-installation-guide)
 - [Usage Guide](#-usage-guide)
 - [Login Credentials](#-login-credentials)
-- [Project Structure](#-project-structure)
 - [Future Enhancements](#-future-enhancements)
 
 ## ✨ Features
@@ -284,37 +281,6 @@ Jinnah Hospital - jinnah@email.com / hospital123 (Approved)
 Al Shifa Hospital - alshifa@email.com / hospital123 (Pending)
 
 New Life Hospital - newlife@gmail.com / hospital123 (Pending)
-
-## 📁 Project Structure
-blood-donation-portal/
-│
-├── 📄 index.php              # Home page
-├── 📄 about.php              # About us
-├── 📄 contact.php            # Contact page
-├── 📄 login.php              # User login
-├── 📄 register.php           # Registration
-├── 📄 logout.php             # Logout
-├── 📄 admin_dashboard.php    # Admin panel
-├── 📄 donor_dashboard.php    # Donor panel
-├── 📄 hospital_dashboard.php # Hospital panel
-├── 📄 donate_blood.php       # Donation form
-├── 📄 request_blood.php      # Request form
-├── 📄 approve_user.php       # Approve user
-├── 📄 approve_donation.php   # Approve donation
-├── 📄 approve_request.php    # Approve request
-├── 📄 reject_donation.php    # Reject donation
-├── 📄 reject_request.php     # Reject request
-├── 📄 delete_user.php        # Delete user
-├── 📄 connection.php         # Database connection
-│
-├── 📁 css/
-│   └── style.css             # All styles + dark mode
-│
-├── 📁 js/
-│   └── script.js             # JavaScript functions
-│
-├── 📁 sql/
-│   └── blood_donation_portal.sql  # Database dump
 
 
 ## 🚀 Future Enhancements
