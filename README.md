@@ -251,7 +251,8 @@ Approve/Reject Requests (checks stock)
 Monitor Blood Stock in Stock tab
 
 ## 🔑 Login Credentials
-###Admin Account
+Admin Account
+
 Email: admin@bdp.com
 
 Password: admin123
@@ -285,7 +286,6 @@ Al Shifa Hospital - alshifa@email.com / hospital123 (Pending)
 New Life Hospital - newlife@gmail.com / hospital123 (Pending)
 
 ## 📁 Project Structure
-text
 blood-donation-portal/
 │
 ├── 📄 index.php              # Home page
