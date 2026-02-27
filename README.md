@@ -156,6 +156,8 @@ Maintains current blood inventory
 **Option A: Clone with Git**
 ```bash
 git clone https://github.com/IshaIjaz/blood-donation-portal.git
+```
+git clone https://github.com/IshaIjaz/blood-donation-portal.git
 
 **Option B: Download ZIP**
 
