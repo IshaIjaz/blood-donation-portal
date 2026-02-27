@@ -17,9 +17,6 @@ A complete web-based blood donation management system that connects blood donors
 - [Login Credentials](#-login-credentials)
 - [Project Structure](#-project-structure)
 - [Future Enhancements](#-future-enhancements)
-- [Contributing](#-contributing)
-- [License](#-license)
-- [Contact](#-contact)
 
 ## ✨ Features
 
@@ -55,27 +52,33 @@ A complete web-based blood donation management system that connects blood donors
 ## 📸 Screenshots
 
 ### Home Page
+
 <img width="1896" height="913" alt="Screenshot 2026-02-27 223453" src="https://github.com/user-attachments/assets/69b14cea-bba7-4154-b046-8faf49ea5276" />
+
 <img width="1608" height="977" alt="image" src="https://github.com/user-attachments/assets/2318e60f-b6db-48dc-970e-4016fefd5026" />
+
 <img width="1670" height="968" alt="image" src="https://github.com/user-attachments/assets/2230593d-2212-4250-8686-0ea0c2a974b7" />
 
 ### Admin Dashboard
 <img width="1597" height="961" alt="image" src="https://github.com/user-attachments/assets/95286475-d024-412d-abe5-d1a0660df6fc" />
+
 <img width="1390" height="857" alt="image" src="https://github.com/user-attachments/assets/22f682e0-b022-4ff9-8d70-5f48da9380af" />
+
 <img width="1459" height="850" alt="image" src="https://github.com/user-attachments/assets/65534b28-b4d1-4577-90a7-df0e780e3df4" />
+
 <img width="1551" height="865" alt="image" src="https://github.com/user-attachments/assets/2816fb05-7703-4a0a-8c93-8b6b83db8304" />
 
 ### Donor Dashboard
+
 <img width="1605" height="943" alt="Screenshot 2026-02-27 223934" src="https://github.com/user-attachments/assets/ee0d834b-b1a6-4d91-9c23-70090f40388f" />
 
 ### Hospital Dashboard
 
 <img width="1023" height="871" alt="Screenshot 2026-02-27 224113" src="https://github.com/user-attachments/assets/cd1f7297-1cd4-4a86-a320-b5af61bd7097" />
 
-
 ### Dark Mode
-<img width="1678" height="970" alt="Screenshot 2026-02-27 224357" src="https://github.com/user-attachments/assets/61303861-0c8b-4ef6-ad9d-9f3bb08136ef" />
 
+<img width="1678" height="970" alt="Screenshot 2026-02-27 224357" src="https://github.com/user-attachments/assets/61303861-0c8b-4ef6-ad9d-9f3bb08136ef" />
 
 ## 🗄️ Database Structure
 
@@ -153,3 +156,178 @@ Maintains current blood inventory
 **Option A: Clone with Git**
 ```bash
 git clone https://github.com/IshaIjaz/blood-donation-portal.git
+
+**Option B: Download ZIP**
+
+Download ZIP from GitHub
+
+Extract to XAMPP's htdocs folder
+
+#### Step 3: Move to htdocs
+Windows: Copy to C:\xampp\htdocs\blood-donation-portal\
+
+Mac: Copy to /Applications/XAMPP/htdocs/blood-donation-portal/
+
+#### Step 4: Create Database
+Open phpMyAdmin: http://localhost/phpmyadmin
+
+Click "New" in left sidebar
+
+Database name: blood_donation_portal
+
+Collation: utf8mb4_general_ci
+
+Click "Create"
+
+#### Step 5: Import Database
+Select the new database
+
+Click "Import" tab
+
+Click "Choose File"
+
+Select sql/blood_donation_portal.sql
+
+Click "Go"
+
+#### Step 6: Configure Connection
+Open connection.php and verify:
+
+php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$database = "blood_donation_portal";
+
+#### Step 7: Run Project
+Open browser and go to:
+
+text
+http://localhost/blood-donation-portal/
+
+## 📖 Usage Guide
+### For Donors
+
+Register as Donor (select blood group)
+
+Wait for Admin Approval
+
+Login with credentials
+
+View Dashboard with donation history
+
+Schedule New Donation using date picker
+
+Track Status (Pending → Approved/Rejected)
+
+### For Hospitals
+
+Register as Hospital
+
+Wait for Admin Approval
+
+Login with credentials
+
+Check Blood Stock availability
+
+Submit Request (blood group + units)
+
+Track Request Status in history
+
+### For Admin
+
+Login with admin credentials
+
+View Statistics on dashboard
+
+Approve/Reject Users in Users tab
+
+Approve/Reject Donations (adds to stock)
+
+Approve/Reject Requests (checks stock)
+
+Monitor Blood Stock in Stock tab
+
+## 🔑 Login Credentials
+###Admin Account
+Email: admin@bdp.com
+
+Password: admin123
+
+Role: Admin
+
+Status: Approved
+
+### Sample Donor Accounts
+Ali Khan - ali.khan@email.com / password123 (A+)
+
+Sara Ahmed - sara.ahmed@email.com / password123 (B+)
+
+Hassan Raza - hassan.raza@email.com / password123 (O+)
+
+Fatima Bibi - fatima@email.com / password123 (AB+)
+
+Yasir Ali - yasir@gmai.com / password123 (O-)
+
+Bisma Khan - bisma@email.com / password123 (O+)
+
+### Sample Hospital Accounts
+City Hospital Lahore - city.hospital@email.com / hospital123 (Approved)
+
+Fatima Memorial Hospital - fmh@email.com / hospital123 (Approved)
+
+Jinnah Hospital - jinnah@email.com / hospital123 (Approved)
+
+Al Shifa Hospital - alshifa@email.com / hospital123 (Pending)
+
+New Life Hospital - newlife@gmail.com / hospital123 (Pending)
+
+## 📁 Project Structure
+text
+blood-donation-portal/
+│
+├── 📄 index.php              # Home page
+├── 📄 about.php              # About us
+├── 📄 contact.php            # Contact page
+├── 📄 login.php              # User login
+├── 📄 register.php           # Registration
+├── 📄 logout.php             # Logout
+├── 📄 admin_dashboard.php    # Admin panel
+├── 📄 donor_dashboard.php    # Donor panel
+├── 📄 hospital_dashboard.php # Hospital panel
+├── 📄 donate_blood.php       # Donation form
+├── 📄 request_blood.php      # Request form
+├── 📄 approve_user.php       # Approve user
+├── 📄 approve_donation.php   # Approve donation
+├── 📄 approve_request.php    # Approve request
+├── 📄 reject_donation.php    # Reject donation
+├── 📄 reject_request.php     # Reject request
+├── 📄 delete_user.php        # Delete user
+├── 📄 connection.php         # Database connection
+│
+├── 📁 css/
+│   └── style.css             # All styles + dark mode
+│
+├── 📁 js/
+│   └── script.js             # JavaScript functions
+│
+├── 📁 sql/
+│   └── blood_donation_portal.sql  # Database dump
+
+
+## 🚀 Future Enhancements
+Email notifications for approvals/rejections
+
+SMS alerts for emergency requests
+
+Donor eligibility checker (age, weight, last donation)
+
+Analytics dashboard with charts and graphs
+
+Export reports to PDF/Excel
+
+Password hashing for security
+
+CAPTCHA for registration forms
+
+Multi-language support
